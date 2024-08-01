@@ -11,6 +11,7 @@ import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import com.momosoftworks.coldsweat.api.temperature.modifier.BiomeTempModifier;
+import com.momosoftworks.coldsweat.api.temperature.modifier.UndergroundTempModifier;
 
 @Mod.EventBusSubscriber
 public class Events
@@ -22,6 +23,7 @@ public class Events
         Player player = event.getPlayer();
         if (!player.level.isClientSide) {
             Temperature.removeModifiers(player, Temperature.Type.WORLD, mod -> mod instanceof BiomeTempModifier);
+            Temperature.removeModifiers(player, Temperature.Type.WORLD, mod -> mod instanceof UndergroundTempModifier);
             Temperature.addModifier(player, ColdSweatModifierCompatibility, Temperature.Type.WORLD, false, com.momosoftworks.coldsweat.api.util.Temperature.Addition.BEFORE_FIRST);
         }
     }
