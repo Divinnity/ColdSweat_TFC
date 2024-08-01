@@ -5,7 +5,7 @@ import com.momosoftworks.coldsweat.api.temperature.block_temp.BlockTemp;
 import com.momosoftworks.coldsweat.api.util.Temperature;
 import com.momosoftworks.coldsweat.util.math.CSMath;
 
-import net.dries007.tfc.common.blockentities.CharcoalForgeBlockEntity;
+import net.dries007.tfc.common.blockentities.FirepitBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.LivingEntity;
@@ -15,13 +15,13 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.registries.ForgeRegistries;
 
-public class CharcoalForgeBlockTemp extends BlockTemp {
+public class FirePitBlockTemp extends BlockTemp {
 
-    public static final Block CHARCOAL_FORGE = ForgeRegistries.BLOCKS.getValue(new ResourceLocation("tfc", "charcoal_forge"));
+    public static final Block FIREPIT = ForgeRegistries.BLOCKS.getValue(new ResourceLocation("tfc", "firepit"));
 
-    public CharcoalForgeBlockTemp() {
+    public FirePitBlockTemp() {
 
-        super(CHARCOAL_FORGE);
+        super(FIREPIT);
     }
 
     @Override
@@ -29,11 +29,11 @@ public class CharcoalForgeBlockTemp extends BlockTemp {
     {
         float temperature = 0f;
         BlockEntity blockEntity = level.getBlockEntity(pos);
-        if (blockEntity != null && blockEntity instanceof CharcoalForgeBlockEntity charcoalForge) {
-            temperature = charcoalForge.getTemperature();
+        if (blockEntity != null && blockEntity instanceof FirepitBlockEntity firepit) {
+            temperature = firepit.getTemperature();
         }
         double converted_temperature = Temperature.convertUnits(temperature, Temperature.Units.C, Temperature.Units.MC, true);
-        return CSMath.blend(converted_temperature / 40, 0, distance, 0.5, 7);
+        return CSMath.blend(converted_temperature / 30, 0, distance, 0.5, 7);
     }
     
 }

@@ -1,7 +1,6 @@
 package com.divinnity.coldsweat_tfc.common;
 
-import com.divinnity.coldsweat_tfc.compat.CharcoalForgeBlockTemp;
-import com.divinnity.coldsweat_tfc.compat.ColdSweatTempModifier;
+import com.divinnity.coldsweat_tfc.compat.*;
 import com.momosoftworks.coldsweat.api.event.core.BlockTempRegisterEvent;
 import com.momosoftworks.coldsweat.api.event.core.TempModifierRegisterEvent;
 import com.momosoftworks.coldsweat.api.temperature.modifier.TempModifier;
@@ -36,5 +35,8 @@ public class Events
     @SubscribeEvent
     public static void onBlockTempsRegister(BlockTempRegisterEvent event) {
         event.register(new CharcoalForgeBlockTemp());
+        event.register(new FirePitBlockTemp());
+        event.register(new GrillBlockTemp());
+        event.register(new PotBlockTemp());
     }
 }
