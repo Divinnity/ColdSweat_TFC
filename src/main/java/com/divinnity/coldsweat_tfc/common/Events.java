@@ -1,6 +1,6 @@
-package com.divinnity.hardrock.common;
+package com.divinnity.coldsweat_tfc.common;
 
-import com.divinnity.hardrock.compat.ColdSweatTempModifier;
+import com.divinnity.coldsweat_tfc.compat.ColdSweatTempModifier;
 import com.momosoftworks.coldsweat.api.event.core.TempModifierRegisterEvent;
 import com.momosoftworks.coldsweat.api.temperature.modifier.TempModifier;
 import com.momosoftworks.coldsweat.api.util.Temperature;
@@ -28,6 +28,6 @@ public class Events
     @SubscribeEvent
     public static void registerTempModifiers(TempModifierRegisterEvent event)
     {
-        event.registerByClassName("com.divinnity.hardrock.compat.ColdSweatTempModifier");
+        event.registerByClassName("com.divinnity.coldsweat_tfc.compat.ColdSweatTempModifier");
     }
 }

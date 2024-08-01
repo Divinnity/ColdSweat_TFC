@@ -1,4 +1,4 @@
-package com.divinnity.hardrock.compat;
+package com.divinnity.coldsweat_tfc.compat;
 
 import java.lang.Double;
 import com.momosoftworks.coldsweat.api.temperature.modifier.BiomeTempModifier;

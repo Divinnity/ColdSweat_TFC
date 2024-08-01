@@ -44,7 +44,7 @@ minecraft {
             workingDirectory project.file('run')
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
-            property 'forge.enabledGameTestNamespaces', 'hardrock'
+            property 'forge.enabledGameTestNamespaces', 'coldsweat_TFC'
             // To be used with JBR SDK only.
             jvmArg "-XX:+AllowEnhancedClassRedefinition"
             // Needed for TFC to work properly
@@ -61,7 +61,7 @@ minecraft {
             workingDirectory project.file('run')
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
-            property 'forge.enabledGameTestNamespaces', 'hardrock'
+            property 'forge.enabledGameTestNamespaces', 'coldsweat_TFC'
             // To be used with JBR SDK only.
             jvmArg "-XX:+AllowEnhancedClassRedefinition"
             // Needed for TFC to work properly
@@ -78,7 +78,7 @@ minecraft {
             workingDirectory project.file('run')
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
-            property 'forge.enabledGameTestNamespaces', 'hardrock'
+            property 'forge.enabledGameTestNamespaces', 'coldsweat_TFC'
             // To be used with JBR SDK only.
             jvmArg "-XX:+AllowEnhancedClassRedefinition"
             // Needed for TFC to work properly
