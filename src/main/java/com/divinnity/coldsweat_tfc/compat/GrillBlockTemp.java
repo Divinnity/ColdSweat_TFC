@@ -1,6 +1,5 @@
 package com.divinnity.coldsweat_tfc.compat;
 
-import com.divinnity.coldsweat_tfc.coldsweat_tfc;
 import com.momosoftworks.coldsweat.api.temperature.block_temp.BlockTemp;
 import com.momosoftworks.coldsweat.api.util.Temperature;
 import com.momosoftworks.coldsweat.util.math.CSMath;
