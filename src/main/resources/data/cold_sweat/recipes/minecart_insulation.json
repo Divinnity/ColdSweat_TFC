@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        "W W",
+        "LLL"
+    ],
+    "key": {
+        "W": {
+            "tag": "tfc:high_quality_cloth"
+        },
+        "L": {
+            "item": "minecraft:leather"
+        }
+    },
+    "result": {
+        "item": "cold_sweat:minecart_insulation",
+        "count": 1
+    }
+}

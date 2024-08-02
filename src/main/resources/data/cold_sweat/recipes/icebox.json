@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "CCC",
+        "P P",
+        "PPP"
+    ],
+    "key": {
+        "C": {
+            "tag": "minecraft:slabs"
+        },
+        "P": {
+            "tag": "minecraft:planks"
+        }
+    },
+    "result": {
+        "item": "cold_sweat:icebox",
+        "count": 1
+    }
+}

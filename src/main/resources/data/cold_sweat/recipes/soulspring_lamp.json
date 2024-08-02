@@ -1,0 +1,57 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " G ",
+        "IHI",
+        " C "
+    ],
+    "key": {
+        "I": {
+            "item": "tfc:metal/ingot/wrought_iron"
+        },
+        "G": {
+            "item": "tfc:metal/rod/gold"
+        },
+        "H": {
+            "tag": "forge:gems"
+        },
+        "C": {
+            "ingredients": [
+                {
+                    "item": "tfc:metal/chain/bismuth_bronze"
+                },
+                {
+                    "item": "tfc:metal/chain/black_bronze"
+                },
+                {
+                    "item": "tfc:metal/chain/bronze"
+                },
+                {
+                    "item": "tfc:metal/chain/wrought_iron"
+                },
+                {
+                    "item": "tfc:metal/chain/copper"
+                },
+                {
+                    "item": "tfc:metal/chain/steel"
+                },
+                {
+                    "item": "tfc:metal/chain/red_steel"
+                },
+                {
+                    "item": "tfc:metal/chain/blue_steel"
+                },
+                {
+                    "item": "tfc:metal/chain/black_steel"
+                }
+            ]
+        }
+    },
+    "result": {
+        "item": "cold_sweat:soulspring_lamp",
+        "count": 1,
+        "nbt": {
+            "Fuel": 64
+        }
+    }
+}
