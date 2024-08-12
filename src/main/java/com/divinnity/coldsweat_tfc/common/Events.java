@@ -72,5 +72,6 @@ public class Events
         event.register(new ModBlockTemp("tfc", "fluid/spring_water", 5f, 3));
         event.register(new ModBlockTemp("minecraft", "water", -0.1f, 4));
         event.register(new ModBlockTemp("tfc", "fluid/salt_water", -0.1f, 4));
+        event.register(new ModBlockTemp("tfc", "torch", 3f, 7));
     }
 }
